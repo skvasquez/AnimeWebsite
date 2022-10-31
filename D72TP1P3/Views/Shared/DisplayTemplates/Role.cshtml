@@ -1,0 +1,13 @@
+﻿@model D72TP1P3.Models.DataModels.Role
+@using D72TP1P3.Models.DataModels
+
+<link href="~/Content/Actors.css" rel="stylesheet" type="text/css" />
+    <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+        <div class="card">
+            <img class="card-img-top mx-auto rounded"style="height:270px;" src="@Model.Actor.Image" alt="@Model.Actor.Name">
+            <div class="card-body text-center">
+                <h5 class="card-title">@Model.Actor.Name</h5>
+                <p class="card-footer text-center text-muted">@Model.Character</p>
+            </div>
+        </div>
+    </div>

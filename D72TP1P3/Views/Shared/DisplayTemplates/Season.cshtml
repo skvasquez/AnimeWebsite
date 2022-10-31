@@ -1,0 +1,16 @@
+﻿@model D72TP1P3.Models.DataModels.Season
+
+<div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4" style="margin:15px">
+    <!-- Recherche web : bootstrap card  -->
+    <div class="card" style=width:250px>
+        <a href="/Library/Season?SeasonId=@Model.SeasonId">
+            <img class="card-img-top mx-auto rounded" style="max-width:250px;max-height:375px;min-width:250px;min-height:375px;" src="@Model.Image" alt="@Model.ShortSeasonName">
+        </a>
+            <div class="card-body text-center">
+                
+                    <h5 class="card-title">Season @Model.Number</h5>
+                    <h5> @Model.Episodes.Count() @D72TP1P3.Resources.Views.StringsViews.Episodes</h5>
+                
+            </div>
+    </div>
+</div>

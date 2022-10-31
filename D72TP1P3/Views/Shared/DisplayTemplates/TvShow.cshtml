@@ -1,0 +1,27 @@
+﻿@model D72TP1P3.Models.DataModels.TvShow
+
+<head>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+</head>
+
+<div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+    <div class="card">
+        <a href="/Library/TvShow?TvShowId=@Model.TvShowId">
+            <img class="card-img-top mx-auto rounded" style="width:250px;height:375px" src="@Model.Image" alt="@Model.Title">
+        </a>
+        <div class="card-body text-center">
+            <h5 class="card-title">@Model.Title</h5>
+
+            @if (Model.Seasons.Count() > 1)
+            {
+                <p class="card-footer text-center text-secondary">@Model.Seasons.Count() @D72TP1P3.Resources.Views.StringsViews.Seasons</p>
+            }
+            else
+            {
+                <p class="card-footer text-center text-secondary">@Model.Seasons.Count() @D72TP1P3.Resources.Views.StringsViews.Season</p>
+            }
+
+        </div>
+    </div>
+</div>
+
